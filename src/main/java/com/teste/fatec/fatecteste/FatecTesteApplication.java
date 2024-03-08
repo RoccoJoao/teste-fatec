@@ -10,18 +10,6 @@ import jakarta.websocket.server.PathParam;
 @RestController
 @SpringBootApplication
 public class FatecTesteApplication {
-	@RequestMapping("/")
-	String home() {
-		return "hello world";
-	}
-	@RequestMapping("/number")
-	int home3() {
-		return 110;
-	}
-	@RequestMapping("/number1/{num}")
-	Integer home2(@PathVariable Integer num) {
-		return num;
-	}
     @RequestMapping("/classificar/{idade}")
     String classificarIdade(@PathVariable int idade) {
         if (idade < 0) {
