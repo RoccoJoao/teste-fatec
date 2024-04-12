@@ -1,4 +1,4 @@
-package com.teste.fatec.fatecteste.Controllers;
+package br.com.api_fatec.api_fatec.Controllers.Exercicio;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,6 @@ import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-
 @RestController
 public class AnimalController {
 

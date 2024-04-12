@@ -1,11 +1,11 @@
-package com.teste.fatec.fatecteste.domain.cliente;
+package br.com.api_fatec.api_fatec.domain.cliente;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.teste.fatec.fatecteste.entities.Cliente;
+import br.com.api_fatec.api_fatec.entities.Cliente;
 
 @Service
 public class ClienteService {
@@ -27,5 +27,4 @@ public class ClienteService {
 	public void deletarCliente(Long id) {
 		clienteRepository.deleteById(id);
 	}
-
 }

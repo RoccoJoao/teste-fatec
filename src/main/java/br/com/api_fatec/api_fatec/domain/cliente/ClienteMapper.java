@@ -1,9 +1,8 @@
-package com.teste.fatec.fatecteste.domain.cliente;
-
+package br.com.api_fatec.api_fatec.domain.cliente;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.teste.fatec.fatecteste.entities.Cliente;
+import br.com.api_fatec.api_fatec.entities.Cliente;
 
 public class ClienteMapper {
     public static Cliente toEntity(ClienteDTO dto) {

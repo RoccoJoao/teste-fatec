@@ -1,7 +1,7 @@
-package com.teste.fatec.fatecteste.Controllers;
+package br.com.api_fatec.api_fatec.Controllers.Exercicio;
+
 
 import java.util.List;
-
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,11 +14,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.teste.fatec.fatecteste.domain.cliente.ClienteDTO;
-import com.teste.fatec.fatecteste.domain.cliente.ClienteMapper;
-import com.teste.fatec.fatecteste.domain.cliente.ClienteService;
-import com.teste.fatec.fatecteste.entities.Cliente;
-
+import br.com.api_fatec.api_fatec.domain.cliente.ClienteDTO;
+import br.com.api_fatec.api_fatec.domain.cliente.ClienteMapper;
+import br.com.api_fatec.api_fatec.domain.cliente.ClienteService;
+import br.com.api_fatec.api_fatec.entities.Cliente;
 
 @RestController()
 @RequestMapping("/api/clientes/v1")
@@ -46,6 +45,7 @@ public class ClienteController {
 		ClienteDTO clienteSalvo = ClienteMapper.toDTO(clienteService.salvarCliente(cliente));
 		return new ResponseEntity<>(clienteSalvo, HttpStatus.CREATED);
 	}
+	
 
 	@DeleteMapping("/{id}")
 	public ResponseEntity<Void> deletarCliente(@PathVariable Long id) {

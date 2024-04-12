@@ -1,4 +1,5 @@
-package com.teste.fatec.fatecteste.domain.cliente;
+package br.com.api_fatec.api_fatec.domain.cliente;
+
 
 public class ClienteDTO {
     private Long id;

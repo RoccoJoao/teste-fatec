@@ -1,4 +1,4 @@
-package com.teste.fatec.fatecteste.entities;
+package br.com.api_fatec.api_fatec.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -59,12 +59,12 @@ public class Cliente {
 	
 	@Column(name = "razao_social",length = 60, nullable = false)
 	private String razaoSocial;
-	
+	 
 	@Column()
 	private String endereco;
 	
 	@Column()
 	@Email
 	private String email;
- 
+
 }

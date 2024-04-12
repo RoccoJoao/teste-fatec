@@ -1,8 +1,8 @@
-package com.teste.fatec.fatecteste.domain.cliente;
+package br.com.api_fatec.api_fatec.domain.cliente;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.teste.fatec.fatecteste.entities.Cliente;
+import br.com.api_fatec.api_fatec.entities.Cliente;
 
 public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 
